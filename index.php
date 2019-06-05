@@ -1,10 +1,10 @@
 <?php
 
-require 'functions/functions.php';
+require 'class/arrayNumbersClass.php';
 
-$array = CreateArray();
-$array = PopulateArray($array);
-$array = PopulateArrayWithMUltiplesOfThree($array);
-$array = PopulateArrayWithMUltiplesOfFive($array);
-$array = PopulateArrayWithMUltiplesOfThreeAndFive($array);
-showValuesOfArray($array);
+$arrayNumbers = new ArrayNumbers();
+$arrayNumbers = $arrayNumbers->PopulateArray();
+// $arrayNumbers = $arrayNumbers->PopulateArrayWithMUltiplesOfThree();
+// $arrayNumbers = $arrayNumbers->PopulateArrayWithMUltiplesOfFive();
+// $arrayNumbers = $arrayNumbers->PopulateArrayWithMUltiplesOfThreeAndFive();
+$arrayNumbers->showValuesOfArray();
