@@ -1,7 +1,7 @@
 <?php
 
-require 'class/arrayNumbersClass.php';
+require './class/ArrayOfNumbers.class.php';
 
-$arrayNumbersObject = new ArrayNumbers();
+$arrayOfNumbersObject = new ArrayOfNumbers();
 
-$arrayNumbersObject->executeAndShowValues();
+$arrayOfNumbersObject->executeAndShowValues();
